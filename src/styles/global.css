@@ -1,0 +1,67 @@
+/* Top Places Section */
+.top-places {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.top-places h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--egyptian-blue);
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.top-places h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--gold-accent);
+  margin: 15px auto 0;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.place-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.place-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 20px;
+  text-align: right;
+}
+
+.place-info h3 {
+  font-size: 22px;
+  color: var(--egyptian-blue);
+  margin-bottom: 10px;
+}
+
+.place-info p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
